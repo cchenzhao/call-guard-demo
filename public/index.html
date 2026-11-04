@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Call Guard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="call-shell">
+    <header class="topbar">
+      <span class="brand-dot"></span>
+      <p>CALL GUARD</p>
+      <span class="live-status"><i></i> Secure line</span>
+    </header>
+
+    <section class="participants" aria-label="Voice call">
+      <article class="participant agent-side">
+        <div class="name-row"><span class="avatar-mark">S</span><span>Scam Ninja</span><em>fictional</em></div>
+        <div class="portrait-frame ninja-frame">
+          <img src="/images/ninja.jpeg" alt="Ninja avatar for the fictional Scam Ninja caller">
+          <div class="portrait-shade"></div>
+        </div>
+        <button id="start" class="round-control start-control" aria-label="Start live call" title="Start live call">
+          <span class="play-icon"></span>
+        </button>
+      </article>
+
+      <div class="connection" aria-hidden="true"><span></span><i></i><span></span></div>
+
+      <article class="participant user-side">
+        <div class="name-row"><span class="avatar-mark user-mark">W</span><span>Whiskey the Cat</span><em>private</em></div>
+        <div class="portrait-frame cat-frame">
+          <img src="/images/cat.jpg" alt="Whiskey the Cat, the private user-side avatar">
+          <div class="portrait-shade"></div>
+        </div>
+        <button id="mic" class="round-control voice-orb" disabled aria-label="Hold to talk" title="Hold to talk">
+          <span class="mic-icon" aria-hidden="true"></span>
+          <span id="mic-label" class="sr-only">Hold to talk</span>
+        </button>
+      </article>
+    </section>
+
+    <section class="call-note" aria-live="polite">
+      <span class="note-pulse"></span>
+      <span id="call-status">Press play to begin the fictional call.</span>
+    </section>
+
+    <section class="harness-panel" aria-label="Harness status">
+      <div><small>Harness</small><strong id="state">WAIT</strong></div>
+      <div><small>Decision path</small><span id="path">Standing by</span></div>
+      <div><small>Signal</small><span id="why">Listening for private credential disclosure.</span></div>
+    </section>
+
+    <details class="decision-audit">
+      <summary>Detection breakdown · <span id="audit-counts">No checks yet</span></summary>
+      <p>Counts are transcript checks, not distinct risks. Rules run first; MiniLM is skipped when a rule returns a decision.</p>
+      <ol id="audit-events"></ol>
+      <button id="export-audit" class="outcome-reset">Download decision log</button>
+    </details>
+
+    <div id="agent" class="sr-only" aria-live="polite"></div>
+    <section id="warning" hidden aria-live="assertive" aria-modal="true" role="dialog" aria-labelledby="outcome-title">
+      <div class="outcome-card">
+        <div class="fireworks" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="outcome-seal" aria-hidden="true">✓</div>
+        <p class="outcome-kicker">SIMULATED OUTCOME</p>
+        <h2 id="outcome-title">Scam interaction stopped</h2>
+        <button id="reset-call" class="outcome-reset">Start a new fictional call</button>
+      </div>
+    </section>
+  </main>
+  <script src="app.js?v=vercel-v1"></script>
+</body>
+</html>

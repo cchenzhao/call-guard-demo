@@ -1,0 +1,8 @@
+{
+  "scenarios": 150,
+  "partial_checks": 858,
+  "action_or_source_mismatches": 0,
+  "max_probability_absolute_difference": 1.823902130126953e-05,
+  "weights": "Original FP32, no quantization",
+  "note": "Offline parity on saved synthetic ASR histories and partials, not deployment latency validation."
+}

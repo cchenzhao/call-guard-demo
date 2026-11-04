@@ -1,0 +1,8 @@
+{
+  "format": "ONNX FP32, unquantized",
+  "source": "candidate_003",
+  "threshold": 0.9498332142829895,
+  "onnx_sha256": "15280befc29af4ded8602f361055dc710c894d3340baa62feafa00245b63b3fa",
+  "size_bytes": 133650784,
+  "parts": 3
+}
