@@ -258,6 +258,10 @@ if (new URLSearchParams(window.location.search).get('preview') === 'outcome') co
 // Warm the cloud classifier before the user starts a call.
 el('start').disabled = true;
 el('call-status').textContent = 'Preparing security harness…';
-fetch('/api/health').then(r => { if (!r.ok) throw new Error(); return r.json(); }).then(() => {
+fetch('/api/health').then(r => { if (!r.ok) throw new Error(); return r.json(); }).then(status => {
+  if (!status.speech_configured || !status.agent_configured) {
+    if (!blocked) el('call-status').textContent = 'Security harness ready. Voice service setup is pending.';
+    return;
+  }
   if (!blocked) { el('start').disabled = false; el('call-status').textContent = 'Ready when you are.'; }
 }).catch(() => { el('call-status').textContent = 'Security harness unavailable. Reload to retry.'; });
