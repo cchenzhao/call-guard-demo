@@ -4,7 +4,7 @@ A research demo featuring Scam Ninja and Whiskey the Cat. Use invented credentia
 
 ## Architecture
 
-- Browser microphone → Deepgram Nova-3 streaming ASR using a short-lived token.
+- Browser microphone → same-origin Vercel WebSocket proxy → Deepgram Nova-3 streaming ASR. The permanent key stays on the server.
 - Each nonempty partial + conversation history → server-side refusal/context/fast-path rules, then fine-tuned MiniLM if unresolved.
 - Original `candidate_003` checkpoint exported to **FP32 ONNX without quantization**, with the original 0.9498332142829895 warning threshold and 0.10 low threshold.
 - `INTERVENE` plays the preloaded warning and ends the simulated call.
@@ -15,7 +15,7 @@ This is a hosting adaptation of the local research prototype. Serverless cold st
 ## Deploy on Vercel
 
 1. Import this repository into Vercel.
-2. Set `DEEPGRAM_API_KEY` (Member scope for token grants) and `OPENROUTER_API_KEY` as encrypted environment variables.
+2. Set `DEEPGRAM_API_KEY` and `OPENROUTER_API_KEY` as encrypted environment variables.
 3. Deploy with the included `vercel.json`. Python 3.12 is required.
 
 The three `model/weights.part*` files reconstruct the same ONNX model in memory. They keep each Git file below GitHub's 100 MB limit. Do not change individual parts. `manifest.json` records the complete model SHA256.
@@ -37,7 +37,7 @@ Use `vercel dev` for the combined static site and API routing.
 ## Endpoints
 
 - `GET /api/health`: warms model, reports readiness and configuration booleans.
-- `POST /api/speech-token`: mints short-lived Deepgram token; never returns a permanent API key.
+- `WebSocket /api/speech`: proxies streaming audio and returns safety decisions / final text; no provider key is sent to the browser.
 - `POST /api/safety`: evaluates partial text and history.
 - `POST /api/agent-reply`: streams caller text and speech as NDJSON.
 - `POST /api/tts`: streams speech as NDJSON.

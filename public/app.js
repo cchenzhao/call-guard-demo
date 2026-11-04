@@ -70,7 +70,7 @@ function completeIntervention() {
   agentAudio = null;
   try { if (recorder?.state === 'recording') recorder.stop(); } catch (_) {}
   try { stream?.getTracks().forEach(track => track.stop()); } catch (_) {}
-  try { if (socket?.readyState === WebSocket.OPEN) socket.send(JSON.stringify({type: 'CloseStream'})); } catch (_) {}
+  try { if (socket?.readyState === WebSocket.OPEN) socket.send(JSON.stringify({type: 'finish'})); } catch (_) {}
   el('mic').disabled = true;
   el('mic-label').textContent = 'Call ended';
   el('start').disabled = true;
@@ -170,7 +170,7 @@ async function finishTurn() {
   stream?.getTracks().forEach(track => track.stop());
   el('mic-label').textContent = 'Finishing…';
   el('call-status').textContent = 'Processing your voice…';
-  if (socket?.readyState === WebSocket.OPEN) socket.send(JSON.stringify({type: 'CloseStream'}));
+  if (socket?.readyState === WebSocket.OPEN) socket.send(JSON.stringify({type: 'finish'}));
 }
 async function beginTurn(event) {
   if (el('mic').disabled || holding || busy || blocked) return;
@@ -181,57 +181,33 @@ async function beginTurn(event) {
   try {
     stream = await navigator.mediaDevices.getUserMedia({audio: {echoCancellation: true}});
     if (!holding) { stream.getTracks().forEach(track => track.stop()); busy = false; setListening(false); return; }
-    const tokenResponse = await post('/api/speech-token', {});
-    if (!tokenResponse.access_token) throw new Error('Speech connection unavailable.');
-    socket = new WebSocket('wss://api.deepgram.com/v1/listen?model=nova-3&language=en-US&interim_results=true&punctuate=true&endpointing=300', ['bearer', tokenResponse.access_token]);
-    let finalized = '', latest = '', pendingChecks = Promise.resolve(), finished = false;
-    const finish = async () => {
-      if (finished) return;
-      finished = true;
-      clearTimeout(flushTimer);
-      await pendingChecks;
-      if (blocked) { socket.close(); return; }
-      finalText = removeWarningEcho(latest);
-      try { if (!turnSent && finalText.trim()) { turnSent = true; await streamReply(); } }
-      finally { busy = false; setListening(false); socket.close(); }
-    };
-    let flushTimer;
-    socket.onopen = () => {
-      if (!holding) { socket.close(); busy = false; setListening(false); return; }
-      recorder = new MediaRecorder(stream, {mimeType: 'audio/webm;codecs=opus'});
-      recorder.ondataavailable = chunk => { if (chunk.data.size && socket.readyState === WebSocket.OPEN) socket.send(chunk.data); };
-      recorder.onstop = () => {
-        setListening(false); stream?.getTracks().forEach(track => track.stop());
-        if (blocked) { socket.close(); return; }
-        el('mic-label').textContent = 'Finishing…';
-        if (socket.readyState === WebSocket.OPEN) socket.send(JSON.stringify({type:'CloseStream'}));
-        flushTimer = setTimeout(finish, 5000);
-      };
-      recorder.start(100); setListening(true);
-    };
-    socket.onmessage = message => {
+    socket = new WebSocket((location.protocol === 'https:' ? 'wss://' : 'ws://') + location.host + '/api/speech');
+    socket.onopen = () => socket.send(JSON.stringify({history, turn_id: turnId}));
+    socket.onmessage = async message => {
       const frame = JSON.parse(message.data);
-      if (frame.type === 'Results') {
-        const text = frame.channel?.alternatives?.[0]?.transcript || '';
-        if (text) {
-          latest = (finalized + ' ' + text).trim();
-          const partial = latest;
-          pendingChecks = pendingChecks.then(async () => {
-            if (!blocked) await safety(partial);
-          }).catch(() => { el('why').textContent = 'Detection unavailable. Please restart the call.'; });
-          if (frame.is_final) finalized = latest;
-        }
-      } else if (frame.type === 'Metadata') finish();
-      else if (frame.type === 'Error') { el('why').textContent = 'Speech recognition failed.'; socket.close(); }
+      if (frame.type === 'ready') {
+        if (!holding) { socket.send(JSON.stringify({type: 'finish'})); return; }
+        recorder = new MediaRecorder(stream, {mimeType: 'audio/webm;codecs=opus'});
+        // Send each new chunk once over a persistent socket; never re-upload history.
+        recorder.ondataavailable = chunk => { if (chunk.data.size && socket.readyState === WebSocket.OPEN) socket.send(chunk.data); };
+        recorder.onstop = finishTurn;
+        recorder.start(100); setListening(true);
+      } else if (frame.type === 'decision') renderDecision(frame.decision);
+      else if (frame.type === 'done') {
+        if (blocked) { socket.close(); return; }
+        finalText = removeWarningEcho(frame.text || '');
+        try { if (!blocked && !turnSent && finalText.trim()) { turnSent = true; await streamReply(); } }
+        finally { busy = false; setListening(false); socket.close(); }
+      } else if (frame.type === 'error') {
+        el('why').textContent = frame.message; socket.close();
+      }
     };
     socket.onclose = () => {
       holding = false;
       if (recorder?.state === 'recording') recorder.stop();
-      stream?.getTracks().forEach(track => track.stop());
-      finish();
+      stream?.getTracks().forEach(track => track.stop()); busy = false; setListening(false);
     };
-    socket.onerror = () => { el('why').textContent = 'Speech connection unavailable. Please restart.'; };
-
+    socket.onerror = () => { el('why').textContent = 'Speech connection unavailable. Please restart the call.'; };
   } catch (error) {
     holding = false; busy = false; setListening(false);
     el('why').textContent = 'Microphone unavailable: ' + error.message;

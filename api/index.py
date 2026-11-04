@@ -1,7 +1,7 @@
 import base64,json,os,time,threading,queue,urllib.request
 from functools import lru_cache
 from pathlib import Path
-from fastapi import FastAPI,Request,HTTPException
+from fastapi import FastAPI,Request,HTTPException,WebSocket,WebSocketDisconnect
 from fastapi.responses import StreamingResponse,JSONResponse
 from harness import Harness
 from voice import agent_messages,agent_text_stream,tts_audio_stream,tls
@@ -10,6 +10,65 @@ app=FastAPI()
 @lru_cache(maxsize=1)
 def get_harness(): return Harness()
 lock=threading.Lock()
+
+@app.websocket('/api/speech')
+async def speech(client:WebSocket):
+ import asyncio
+ from websockets.asyncio.client import connect
+ from starlette.concurrency import run_in_threadpool
+ origin=client.headers.get('origin')
+ host=client.headers.get('x-forwarded-host',client.headers.get('host',''))
+ if origin and origin.rstrip('/') not in ['https://'+host,'http://'+host]:
+  await client.close(code=1008);return
+ await client.accept()
+ try:
+  config=await asyncio.wait_for(client.receive_json(),10)
+  hist=config.get('history',[])
+  if not isinstance(hist,list) or len(hist)>40 or any(not isinstance(x,dict) or x.get('speaker') not in ['user','other'] or not isinstance(x.get('text'),str) or len(x['text'])>2000 for x in hist):
+   raise ValueError('Invalid history')
+  encoding='&encoding=linear16&sample_rate=16000' if config.get('format')=='linear16' else ''
+  url='wss://api.deepgram.com/v1/listen?model=nova-3&language=en-US&interim_results=true&punctuate=true&endpointing=300'+encoding
+  async with connect(url,additional_headers={'Authorization':'Token '+os.environ['DEEPGRAM_API_KEY']},ssl=tls(),proxy=None,open_timeout=20,max_size=2**20) as upstream:
+   await client.send_json({'type':'ready'})
+   def decide(text):
+    start=time.perf_counter()
+    with lock:d=get_harness().local(hist,text)
+    return {**d,'decision_ms':(time.perf_counter()-start)*1000}
+   async def receive():
+    finalized='';latest='';warned=False
+    async for raw in upstream:
+     event=json.loads(raw)
+     if event.get('type')=='Error':raise RuntimeError('Speech recognition failed')
+     if event.get('type')!='Results':continue
+     text=event['channel']['alternatives'][0].get('transcript','')
+     if not text:continue
+     latest=(finalized+' '+text).strip()
+     if not warned:
+      d=await run_in_threadpool(decide,latest)
+      await client.send_json({'type':'decision','decision':d});warned=d['action']=='INTERVENE'
+     if event.get('is_final'):finalized=latest
+    await client.send_json({'type':'done','text':latest})
+   receiver=asyncio.create_task(receive())
+   try:
+    while True:
+     message=await asyncio.wait_for(client.receive(),90)
+     if message['type']=='websocket.disconnect':break
+     if message.get('bytes') is not None:
+      if len(message['bytes'])>2**20:raise ValueError('Chunk too large')
+      await upstream.send(message['bytes'])
+     elif message.get('text') and json.loads(message['text']).get('type')=='finish':
+      await upstream.send(json.dumps({'type':'CloseStream'}))
+      await asyncio.wait_for(receiver,20);break
+   finally:
+    if not receiver.done():receiver.cancel()
+    await asyncio.gather(receiver,return_exceptions=True)
+ except WebSocketDisconnect:pass
+ except Exception:
+  try:await client.send_json({'type':'error','message':'Speech connection failed. Please restart the call.'})
+  except Exception:pass
+ finally:
+  try:await client.close()
+  except Exception:pass
 
 def check_origin(request):
  origin=request.headers.get('origin')
