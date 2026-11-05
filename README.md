@@ -4,6 +4,8 @@ A research demo featuring Scam Ninja and Whiskey the Cat. Use invented credentia
 
 **Live demo:** https://call-guard-demo.vercel.app/
 
+**Demo video:** https://youtu.be/NzATwahUXQ0
+
 **Research evaluation:** [Reproduce the rules / MiniLM / combined comparison](research/README.md). The repository contains the fixed dataset, checkpoint, cached ASR observations and evaluation code; no API key is needed for that comparison.
 
 **Midway report:** [Call Guard report (PDF)](research/Call_Guard_Midway_Report.pdf).
