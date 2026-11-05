@@ -1,0 +1,451 @@
+﻿scenario_id,target,scheme,t1_candidate_ms,t1_source,t3_estimated_ms,delta_ms,first_warning_source
+CC2_04b9733a1f07_I,INTERVENE,rules_only,4000.0,"exact ASR word match, unverified",1939.882,-2060.118,fast-path
+CC2_04b9733a1f07_I,INTERVENE,minilm_only,4000.0,"exact ASR word match, unverified",1949.997,-2050.003,minilm
+CC2_04b9733a1f07_I,INTERVENE,cascade,4000.0,"exact ASR word match, unverified",1939.766,-2060.234,fast-path
+CC2_04b9733a1f07_S,WAIT,rules_only,,,,,
+CC2_04b9733a1f07_S,WAIT,minilm_only,,,,,
+CC2_04b9733a1f07_S,WAIT,cascade,,,,,
+CC2_0ab6949b3e67_I,INTERVENE,rules_only,2800.0,"exact ASR word match, unverified",1968.33,-831.67,fast-path
+CC2_0ab6949b3e67_I,INTERVENE,minilm_only,2800.0,"exact ASR word match, unverified",983.099,-1816.901,minilm
+CC2_0ab6949b3e67_I,INTERVENE,cascade,2800.0,"exact ASR word match, unverified",978.149,-1821.851,minilm
+CC2_0ab6949b3e67_S,WAIT,rules_only,,,,,
+CC2_0ab6949b3e67_S,WAIT,minilm_only,,,,,
+CC2_0ab6949b3e67_S,WAIT,cascade,,,,,
+CC2_1982a59da858_I,INTERVENE,rules_only,5350.0,"exact ASR word match, unverified",,,
+CC2_1982a59da858_I,INTERVENE,minilm_only,5350.0,"exact ASR word match, unverified",1952.593,-3397.407,minilm
+CC2_1982a59da858_I,INTERVENE,cascade,5350.0,"exact ASR word match, unverified",1952.347,-3397.653,minilm
+CC2_1982a59da858_S,WAIT,rules_only,,,,,
+CC2_1982a59da858_S,WAIT,minilm_only,,,,,
+CC2_1982a59da858_S,WAIT,cascade,,,,,
+CC2_1ab6a4b4f1b4_I,INTERVENE,rules_only,1520.0,"exact ASR word match, unverified",1943.327,423.327,fast-path
+CC2_1ab6a4b4f1b4_I,INTERVENE,minilm_only,1520.0,"exact ASR word match, unverified",977.847,-542.153,minilm
+CC2_1ab6a4b4f1b4_I,INTERVENE,cascade,1520.0,"exact ASR word match, unverified",975.859,-544.141,minilm
+CC2_1ab6a4b4f1b4_S,WAIT,rules_only,,,,,
+CC2_1ab6a4b4f1b4_S,WAIT,minilm_only,,,,,
+CC2_1ab6a4b4f1b4_S,WAIT,cascade,,,,,
+CC2_1e89ad90a849_I,INTERVENE,rules_only,5280.0,"exact ASR word match, unverified",,,
+CC2_1e89ad90a849_I,INTERVENE,minilm_only,5280.0,"exact ASR word match, unverified",3921.134,-1358.866,minilm
+CC2_1e89ad90a849_I,INTERVENE,cascade,5280.0,"exact ASR word match, unverified",3920.27,-1359.73,minilm
+CC2_1e89ad90a849_S,WAIT,rules_only,,,,,
+CC2_1e89ad90a849_S,WAIT,minilm_only,,,,,
+CC2_1e89ad90a849_S,WAIT,cascade,,,,,
+CC2_2c1f4e012193_I,INTERVENE,rules_only,3120.0,"exact ASR word match, unverified",2740.524,-379.476,fast-path
+CC2_2c1f4e012193_I,INTERVENE,minilm_only,3120.0,"exact ASR word match, unverified",1079.749,-2040.251,minilm
+CC2_2c1f4e012193_I,INTERVENE,cascade,3120.0,"exact ASR word match, unverified",1077.413,-2042.587,minilm
+CC2_2c1f4e012193_S,WAIT,rules_only,,,,,
+CC2_2c1f4e012193_S,WAIT,minilm_only,,,,,
+CC2_2c1f4e012193_S,WAIT,cascade,,,,,
+CC2_2c8be3e549c0_I,INTERVENE,rules_only,3360.0,"exact ASR word match, unverified",,,
+CC2_2c8be3e549c0_I,INTERVENE,minilm_only,3360.0,"exact ASR word match, unverified",1294.41,-2065.59,minilm
+CC2_2c8be3e549c0_I,INTERVENE,cascade,3360.0,"exact ASR word match, unverified",1292.288,-2067.712,minilm
+CC2_2c8be3e549c0_S,WAIT,rules_only,,,,,
+CC2_2c8be3e549c0_S,WAIT,minilm_only,,,,,
+CC2_2c8be3e549c0_S,WAIT,cascade,,,,,
+CC2_319da3d251db_I,INTERVENE,rules_only,6360.0,"exact ASR word match, unverified",5143.828,-1216.172,fast-path
+CC2_319da3d251db_I,INTERVENE,minilm_only,6360.0,"exact ASR word match, unverified",5153.089,-1206.911,minilm
+CC2_319da3d251db_I,INTERVENE,cascade,6360.0,"exact ASR word match, unverified",5143.846,-1216.154,fast-path
+CC2_319da3d251db_S,WAIT,rules_only,,,,,
+CC2_319da3d251db_S,WAIT,minilm_only,,,,,
+CC2_319da3d251db_S,WAIT,cascade,,,,,
+CC2_380bdaea1ce2_I,INTERVENE,rules_only,3790.0,"exact ASR word match, unverified",2038.727,-1751.273,fast-path
+CC2_380bdaea1ce2_I,INTERVENE,minilm_only,3790.0,"exact ASR word match, unverified",1020.053,-2769.947,minilm
+CC2_380bdaea1ce2_I,INTERVENE,cascade,3790.0,"exact ASR word match, unverified",1019.423,-2770.577,minilm
+CC2_380bdaea1ce2_S,WAIT,rules_only,,,,,
+CC2_380bdaea1ce2_S,WAIT,minilm_only,,,,,
+CC2_380bdaea1ce2_S,WAIT,cascade,,,,,
+CC2_44e693e10fc4_I,INTERVENE,rules_only,1040.0,"exact ASR word match, unverified",1960.21,920.21,context-fast-path
+CC2_44e693e10fc4_I,INTERVENE,minilm_only,1040.0,"exact ASR word match, unverified",1019.331,-20.669,minilm
+CC2_44e693e10fc4_I,INTERVENE,cascade,1040.0,"exact ASR word match, unverified",1019.681,-20.319,minilm
+CC2_44e693e10fc4_S,WAIT,rules_only,,,,,
+CC2_44e693e10fc4_S,WAIT,minilm_only,,,,,
+CC2_44e693e10fc4_S,WAIT,cascade,,,,,
+CC2_49632c6ccd7e_I,INTERVENE,rules_only,4050.0,"exact ASR word match, unverified",2194.736,-1855.264,fast-path
+CC2_49632c6ccd7e_I,INTERVENE,minilm_only,4050.0,"exact ASR word match, unverified",2206.215,-1843.785,minilm
+CC2_49632c6ccd7e_I,INTERVENE,cascade,4050.0,"exact ASR word match, unverified",2194.753,-1855.247,fast-path
+CC2_49632c6ccd7e_S,WAIT,rules_only,,,,,
+CC2_49632c6ccd7e_S,WAIT,minilm_only,,,,,
+CC2_49632c6ccd7e_S,WAIT,cascade,,,,,
+CC2_531af4919044_I,INTERVENE,rules_only,5160.0,"exact ASR word match, unverified",,,
+CC2_531af4919044_I,INTERVENE,minilm_only,5160.0,"exact ASR word match, unverified",2819.988,-2340.012,minilm
+CC2_531af4919044_I,INTERVENE,cascade,5160.0,"exact ASR word match, unverified",2824.958,-2335.042,minilm
+CC2_531af4919044_S,WAIT,rules_only,,,,,
+CC2_531af4919044_S,WAIT,minilm_only,,,,,
+CC2_531af4919044_S,WAIT,cascade,,,,,
+CC2_5feb6e1b83bd_I,INTERVENE,rules_only,3920.0,"exact ASR word match, unverified",2012.245,-1907.755,fast-path
+CC2_5feb6e1b83bd_I,INTERVENE,minilm_only,3920.0,"exact ASR word match, unverified",3068.867,-851.133,minilm
+CC2_5feb6e1b83bd_I,INTERVENE,cascade,3920.0,"exact ASR word match, unverified",2012.251,-1907.749,fast-path
+CC2_5feb6e1b83bd_S,WAIT,rules_only,,,,,
+CC2_5feb6e1b83bd_S,WAIT,minilm_only,,,,,
+CC2_5feb6e1b83bd_S,WAIT,cascade,,,,,
+CC2_65521fa8679a_I,INTERVENE,rules_only,1040.0,"exact ASR word match, unverified",,,
+CC2_65521fa8679a_I,INTERVENE,minilm_only,1040.0,"exact ASR word match, unverified",1011.736,-28.264,minilm
+CC2_65521fa8679a_I,INTERVENE,cascade,1040.0,"exact ASR word match, unverified",1008.096,-31.904,minilm
+CC2_65521fa8679a_S,WAIT,rules_only,,,,,
+CC2_65521fa8679a_S,WAIT,minilm_only,,,,,
+CC2_65521fa8679a_S,WAIT,cascade,,,,,
+CC2_6af434aae3de_I,INTERVENE,rules_only,3100.0,"exact ASR word match, unverified",,,
+CC2_6af434aae3de_I,INTERVENE,minilm_only,3100.0,"exact ASR word match, unverified",1015.74,-2084.26,minilm
+CC2_6af434aae3de_I,INTERVENE,cascade,3100.0,"exact ASR word match, unverified",1014.649,-2085.351,minilm
+CC2_6af434aae3de_S,WAIT,rules_only,,,,,
+CC2_6af434aae3de_S,WAIT,minilm_only,,,,,
+CC2_6af434aae3de_S,WAIT,cascade,,,,,
+CC2_6bfde0307b7b_I,INTERVENE,rules_only,3900.0,"exact ASR word match, unverified",1040.307,-2859.693,context-fast-path
+CC2_6bfde0307b7b_I,INTERVENE,minilm_only,3900.0,"exact ASR word match, unverified",2025.88,-1874.12,minilm
+CC2_6bfde0307b7b_I,INTERVENE,cascade,3900.0,"exact ASR word match, unverified",1040.138,-2859.862,context-fast-path
+CC2_6bfde0307b7b_S,WAIT,rules_only,,,,,
+CC2_6bfde0307b7b_S,WAIT,minilm_only,,,,,
+CC2_6bfde0307b7b_S,WAIT,cascade,,,,,
+CC2_750787d9766d_I,INTERVENE,rules_only,4240.0,"exact ASR word match, unverified",1105.737,-3134.263,context-fast-path
+CC2_750787d9766d_I,INTERVENE,minilm_only,4240.0,"exact ASR word match, unverified",1113.046,-3126.954,minilm
+CC2_750787d9766d_I,INTERVENE,cascade,4240.0,"exact ASR word match, unverified",1105.741,-3134.259,context-fast-path
+CC2_750787d9766d_S,WAIT,rules_only,,,,,
+CC2_750787d9766d_S,WAIT,minilm_only,,,,,
+CC2_750787d9766d_S,WAIT,cascade,,,,,
+CC2_76bbd0c01449_I,INTERVENE,rules_only,3600.0,"exact ASR word match, unverified",1000.446,-2599.554,fast-path
+CC2_76bbd0c01449_I,INTERVENE,minilm_only,3600.0,"exact ASR word match, unverified",1007.251,-2592.749,minilm
+CC2_76bbd0c01449_I,INTERVENE,cascade,3600.0,"exact ASR word match, unverified",1000.443,-2599.557,fast-path
+CC2_76bbd0c01449_S,WAIT,rules_only,,,,,
+CC2_76bbd0c01449_S,WAIT,minilm_only,,,,,
+CC2_76bbd0c01449_S,WAIT,cascade,,,,,
+CC2_8f6a5ea689f0_I,INTERVENE,rules_only,2640.0,"post-hoc ASR positional candidate, unverified",2011.134,-628.866,fast-path
+CC2_8f6a5ea689f0_I,INTERVENE,minilm_only,2640.0,"post-hoc ASR positional candidate, unverified",3046.565,406.565,minilm
+CC2_8f6a5ea689f0_I,INTERVENE,cascade,2640.0,"post-hoc ASR positional candidate, unverified",2011.145,-628.855,fast-path
+CC2_8f6a5ea689f0_S,WAIT,rules_only,,,,,
+CC2_8f6a5ea689f0_S,WAIT,minilm_only,,,,,
+CC2_8f6a5ea689f0_S,WAIT,cascade,,,,,
+CC2_9939e000bc19_I,INTERVENE,rules_only,3810.0,"exact ASR word match, unverified",3073.93,-736.07,fast-path
+CC2_9939e000bc19_I,INTERVENE,minilm_only,3810.0,"exact ASR word match, unverified",3080.592,-729.408,minilm
+CC2_9939e000bc19_I,INTERVENE,cascade,3810.0,"exact ASR word match, unverified",3073.939,-736.061,fast-path
+CC2_9939e000bc19_S,WAIT,rules_only,,,,,
+CC2_9939e000bc19_S,WAIT,minilm_only,,,,,
+CC2_9939e000bc19_S,WAIT,cascade,,,,,
+CC2_a130368c1964_I,INTERVENE,rules_only,3760.0,"exact ASR word match, unverified",3014.829,-745.171,fast-path
+CC2_a130368c1964_I,INTERVENE,minilm_only,3760.0,"exact ASR word match, unverified",3029.913,-730.087,minilm
+CC2_a130368c1964_I,INTERVENE,cascade,3760.0,"exact ASR word match, unverified",3014.84,-745.16,fast-path
+CC2_a130368c1964_S,WAIT,rules_only,,,,,
+CC2_a130368c1964_S,WAIT,minilm_only,,,,,
+CC2_a130368c1964_S,WAIT,cascade,,,,,
+CC2_a3667130f2a2_I,INTERVENE,rules_only,3920.0,"exact ASR word match, unverified",3072.629,-847.371,fast-path
+CC2_a3667130f2a2_I,INTERVENE,minilm_only,3920.0,"exact ASR word match, unverified",1036.178,-2883.822,minilm
+CC2_a3667130f2a2_I,INTERVENE,cascade,3920.0,"exact ASR word match, unverified",1036.185,-2883.815,minilm
+CC2_a3667130f2a2_S,WAIT,rules_only,,,,,
+CC2_a3667130f2a2_S,WAIT,minilm_only,,,,,
+CC2_a3667130f2a2_S,WAIT,cascade,,,,,
+CC2_a8e0a7aaea88_I,INTERVENE,rules_only,2480.0,"exact ASR word match, unverified",2138.534,-341.466,fast-path
+CC2_a8e0a7aaea88_I,INTERVENE,minilm_only,2480.0,"exact ASR word match, unverified",1156.093,-1323.907,minilm
+CC2_a8e0a7aaea88_I,INTERVENE,cascade,2480.0,"exact ASR word match, unverified",1154.626,-1325.374,minilm
+CC2_a8e0a7aaea88_S,WAIT,rules_only,,,2977.641,,fast-path
+CC2_a8e0a7aaea88_S,WAIT,minilm_only,,,,,
+CC2_a8e0a7aaea88_S,WAIT,cascade,,,2977.661,,fast-path
+CC2_b400c9cb96bd_I,INTERVENE,rules_only,3110.0,"exact ASR word match, unverified",1024.427,-2085.573,fast-path
+CC2_b400c9cb96bd_I,INTERVENE,minilm_only,3110.0,"exact ASR word match, unverified",1031.885,-2078.115,minilm
+CC2_b400c9cb96bd_I,INTERVENE,cascade,3110.0,"exact ASR word match, unverified",1024.436,-2085.564,fast-path
+CC2_b400c9cb96bd_S,WAIT,rules_only,,,,,
+CC2_b400c9cb96bd_S,WAIT,minilm_only,,,,,
+CC2_b400c9cb96bd_S,WAIT,cascade,,,,,
+CC2_bafe8f155e0b_I,INTERVENE,rules_only,4240.0,"exact ASR word match, unverified",,,
+CC2_bafe8f155e0b_I,INTERVENE,minilm_only,4240.0,"exact ASR word match, unverified",4405.989,165.989,minilm
+CC2_bafe8f155e0b_I,INTERVENE,cascade,4240.0,"exact ASR word match, unverified",4406.81,166.81,minilm
+CC2_bafe8f155e0b_S,WAIT,rules_only,,,,,
+CC2_bafe8f155e0b_S,WAIT,minilm_only,,,,,
+CC2_bafe8f155e0b_S,WAIT,cascade,,,,,
+CC2_bc498eeb943b_I,INTERVENE,rules_only,3140.0,"exact ASR word match, unverified",,,
+CC2_bc498eeb943b_I,INTERVENE,minilm_only,3140.0,"exact ASR word match, unverified",985.517,-2154.483,minilm
+CC2_bc498eeb943b_I,INTERVENE,cascade,3140.0,"exact ASR word match, unverified",984.4,-2155.6,minilm
+CC2_bc498eeb943b_S,WAIT,rules_only,,,,,
+CC2_bc498eeb943b_S,WAIT,minilm_only,,,,,
+CC2_bc498eeb943b_S,WAIT,cascade,,,,,
+CC2_c0c2ede7a313_I,INTERVENE,rules_only,4040.0,"exact ASR word match, unverified",2048.628,-1991.372,fast-path
+CC2_c0c2ede7a313_I,INTERVENE,minilm_only,4040.0,"exact ASR word match, unverified",1049.743,-2990.257,minilm
+CC2_c0c2ede7a313_I,INTERVENE,cascade,4040.0,"exact ASR word match, unverified",1050.317,-2989.683,minilm
+CC2_c0c2ede7a313_S,WAIT,rules_only,,,,,
+CC2_c0c2ede7a313_S,WAIT,minilm_only,,,,,
+CC2_c0c2ede7a313_S,WAIT,cascade,,,,,
+CC2_c1231a832ed0_I,INTERVENE,rules_only,3920.0,"exact ASR word match, unverified",,,
+CC2_c1231a832ed0_I,INTERVENE,minilm_only,3920.0,"exact ASR word match, unverified",985.691,-2934.309,minilm
+CC2_c1231a832ed0_I,INTERVENE,cascade,3920.0,"exact ASR word match, unverified",984.332,-2935.668,minilm
+CC2_c1231a832ed0_S,WAIT,rules_only,,,,,
+CC2_c1231a832ed0_S,WAIT,minilm_only,,,,,
+CC2_c1231a832ed0_S,WAIT,cascade,,,,,
+CC2_c3f91b4fb33d_I,INTERVENE,rules_only,5520.0,"exact ASR word match, unverified",,,
+CC2_c3f91b4fb33d_I,INTERVENE,minilm_only,5520.0,"exact ASR word match, unverified",2971.441,-2548.559,minilm
+CC2_c3f91b4fb33d_I,INTERVENE,cascade,5520.0,"exact ASR word match, unverified",2970.544,-2549.456,minilm
+CC2_c3f91b4fb33d_S,WAIT,rules_only,,,,,
+CC2_c3f91b4fb33d_S,WAIT,minilm_only,,,,,
+CC2_c3f91b4fb33d_S,WAIT,cascade,,,,,
+CC2_c793e2e4be5d_I,INTERVENE,rules_only,2620.0,"exact ASR word match, unverified",2022.028,-597.972,fast-path
+CC2_c793e2e4be5d_I,INTERVENE,minilm_only,2620.0,"exact ASR word match, unverified",1098.159,-1521.841,minilm
+CC2_c793e2e4be5d_I,INTERVENE,cascade,2620.0,"exact ASR word match, unverified",1097.715,-1522.285,minilm
+CC2_c793e2e4be5d_S,WAIT,rules_only,,,,,
+CC2_c793e2e4be5d_S,WAIT,minilm_only,,,,,
+CC2_c793e2e4be5d_S,WAIT,cascade,,,,,
+CC2_c7e10a593089_I,INTERVENE,rules_only,1120.0,"exact ASR word match, unverified",,,
+CC2_c7e10a593089_I,INTERVENE,minilm_only,1120.0,"exact ASR word match, unverified",932.888,-187.112,minilm
+CC2_c7e10a593089_I,INTERVENE,cascade,1120.0,"exact ASR word match, unverified",935.98,-184.02,minilm
+CC2_c7e10a593089_S,WAIT,rules_only,,,,,
+CC2_c7e10a593089_S,WAIT,minilm_only,,,,,
+CC2_c7e10a593089_S,WAIT,cascade,,,,,
+CC2_cb6e33f29507_I,INTERVENE,rules_only,3410.0,"exact ASR word match, unverified",2167.639,-1242.361,fast-path
+CC2_cb6e33f29507_I,INTERVENE,minilm_only,3410.0,"exact ASR word match, unverified",2177.195,-1232.805,minilm
+CC2_cb6e33f29507_I,INTERVENE,cascade,3410.0,"exact ASR word match, unverified",2167.649,-1242.351,fast-path
+CC2_cb6e33f29507_S,WAIT,rules_only,,,,,
+CC2_cb6e33f29507_S,WAIT,minilm_only,,,,,
+CC2_cb6e33f29507_S,WAIT,cascade,,,,,
+CC2_ce9109b9b0de_I,INTERVENE,rules_only,5270.0,"exact ASR word match, unverified",2934.033,-2335.967,fast-path
+CC2_ce9109b9b0de_I,INTERVENE,minilm_only,5270.0,"exact ASR word match, unverified",5983.283,713.283,minilm
+CC2_ce9109b9b0de_I,INTERVENE,cascade,5270.0,"exact ASR word match, unverified",2934.059,-2335.941,fast-path
+CC2_ce9109b9b0de_S,WAIT,rules_only,,,,,
+CC2_ce9109b9b0de_S,WAIT,minilm_only,,,,,
+CC2_ce9109b9b0de_S,WAIT,cascade,,,,,
+CC2_d33569e1aca7_I,INTERVENE,rules_only,4310.0,"exact ASR word match, unverified",,,
+CC2_d33569e1aca7_I,INTERVENE,minilm_only,4310.0,"exact ASR word match, unverified",3132.585,-1177.415,minilm
+CC2_d33569e1aca7_I,INTERVENE,cascade,4310.0,"exact ASR word match, unverified",3133.281,-1176.719,minilm
+CC2_d33569e1aca7_S,WAIT,rules_only,,,,,
+CC2_d33569e1aca7_S,WAIT,minilm_only,,,,,
+CC2_d33569e1aca7_S,WAIT,cascade,,,,,
+CC2_d3ef43bdb382_I,INTERVENE,rules_only,3520.0,"post-hoc ASR positional candidate, unverified",2084.836,-1435.164,fast-path
+CC2_d3ef43bdb382_I,INTERVENE,minilm_only,3520.0,"post-hoc ASR positional candidate, unverified",3066.731,-453.269,minilm
+CC2_d3ef43bdb382_I,INTERVENE,cascade,3520.0,"post-hoc ASR positional candidate, unverified",2084.844,-1435.156,fast-path
+CC2_d3ef43bdb382_S,WAIT,rules_only,,,,,
+CC2_d3ef43bdb382_S,WAIT,minilm_only,,,,,
+CC2_d3ef43bdb382_S,WAIT,cascade,,,,,
+CC2_d474996c8234_I,INTERVENE,rules_only,4370.0,"exact ASR word match, unverified",,,
+CC2_d474996c8234_I,INTERVENE,minilm_only,4370.0,"exact ASR word match, unverified",2070.885,-2299.115,minilm
+CC2_d474996c8234_I,INTERVENE,cascade,4370.0,"exact ASR word match, unverified",2070.946,-2299.054,minilm
+CC2_d474996c8234_S,WAIT,rules_only,,,,,
+CC2_d474996c8234_S,WAIT,minilm_only,,,,,
+CC2_d474996c8234_S,WAIT,cascade,,,,,
+CC2_d6d0ee8c79f5_I,INTERVENE,rules_only,5150.0,"exact ASR word match, unverified",,,
+CC2_d6d0ee8c79f5_I,INTERVENE,minilm_only,5150.0,"exact ASR word match, unverified",2886.958,-2263.042,minilm
+CC2_d6d0ee8c79f5_I,INTERVENE,cascade,5150.0,"exact ASR word match, unverified",2887.397,-2262.603,minilm
+CC2_d6d0ee8c79f5_S,WAIT,rules_only,,,,,
+CC2_d6d0ee8c79f5_S,WAIT,minilm_only,,,,,
+CC2_d6d0ee8c79f5_S,WAIT,cascade,,,,,
+CC2_da6f7714f79d_I,INTERVENE,rules_only,2480.0,"exact ASR word match, unverified",,,
+CC2_da6f7714f79d_I,INTERVENE,minilm_only,2480.0,"exact ASR word match, unverified",1021.85,-1458.15,minilm
+CC2_da6f7714f79d_I,INTERVENE,cascade,2480.0,"exact ASR word match, unverified",1022.087,-1457.913,minilm
+CC2_da6f7714f79d_S,WAIT,rules_only,,,,,
+CC2_da6f7714f79d_S,WAIT,minilm_only,,,,,
+CC2_da6f7714f79d_S,WAIT,cascade,,,,,
+CC2_e5e044a8ce9d_I,INTERVENE,rules_only,3840.0,"exact ASR word match, unverified",3652.344,-187.656,fast-path
+CC2_e5e044a8ce9d_I,INTERVENE,minilm_only,3840.0,"exact ASR word match, unverified",,,
+CC2_e5e044a8ce9d_I,INTERVENE,cascade,3840.0,"exact ASR word match, unverified",3652.359,-187.641,fast-path
+CC2_e5e044a8ce9d_S,WAIT,rules_only,,,,,
+CC2_e5e044a8ce9d_S,WAIT,minilm_only,,,,,
+CC2_e5e044a8ce9d_S,WAIT,cascade,,,,,
+CC2_e96d7dfd2f74_I,INTERVENE,rules_only,4250.0,"exact ASR word match, unverified",2048.028,-2201.972,fast-path
+CC2_e96d7dfd2f74_I,INTERVENE,minilm_only,4250.0,"exact ASR word match, unverified",1095.171,-3154.829,minilm
+CC2_e96d7dfd2f74_I,INTERVENE,cascade,4250.0,"exact ASR word match, unverified",1095.082,-3154.918,minilm
+CC2_e96d7dfd2f74_S,WAIT,rules_only,,,,,
+CC2_e96d7dfd2f74_S,WAIT,minilm_only,,,,,
+CC2_e96d7dfd2f74_S,WAIT,cascade,,,,,
+CC2_eb28d4237364_I,INTERVENE,rules_only,4540.0,"exact ASR word match, unverified",997.043,-3542.957,fast-path
+CC2_eb28d4237364_I,INTERVENE,minilm_only,4540.0,"exact ASR word match, unverified",1005.707,-3534.293,minilm
+CC2_eb28d4237364_I,INTERVENE,cascade,4540.0,"exact ASR word match, unverified",997.04,-3542.96,fast-path
+CC2_eb28d4237364_S,WAIT,rules_only,,,,,
+CC2_eb28d4237364_S,WAIT,minilm_only,,,,,
+CC2_eb28d4237364_S,WAIT,cascade,,,,,
+CC2_f1ba5baa9012_I,INTERVENE,rules_only,3660.0,"exact ASR word match, unverified",2954.825,-705.175,fast-path
+CC2_f1ba5baa9012_I,INTERVENE,minilm_only,3660.0,"exact ASR word match, unverified",1951.548,-1708.452,minilm
+CC2_f1ba5baa9012_I,INTERVENE,cascade,3660.0,"exact ASR word match, unverified",1944.547,-1715.453,minilm
+CC2_f1ba5baa9012_S,WAIT,rules_only,,,,,
+CC2_f1ba5baa9012_S,WAIT,minilm_only,,,,,
+CC2_f1ba5baa9012_S,WAIT,cascade,,,,,
+CC2_f6750691af9b_I,INTERVENE,rules_only,2320.0,"exact ASR word match, unverified",,,
+CC2_f6750691af9b_I,INTERVENE,minilm_only,2320.0,"exact ASR word match, unverified",947.153,-1372.847,minilm
+CC2_f6750691af9b_I,INTERVENE,cascade,2320.0,"exact ASR word match, unverified",946.97,-1373.03,minilm
+CC2_f6750691af9b_S,WAIT,rules_only,,,,,
+CC2_f6750691af9b_S,WAIT,minilm_only,,,,,
+CC2_f6750691af9b_S,WAIT,cascade,,,,,
+CC2_f794aae3e4ce_I,INTERVENE,rules_only,4780.0,"exact ASR word match, unverified",1949.329,-2830.671,fast-path
+CC2_f794aae3e4ce_I,INTERVENE,minilm_only,4780.0,"exact ASR word match, unverified",961.15,-3818.85,minilm
+CC2_f794aae3e4ce_I,INTERVENE,cascade,4780.0,"exact ASR word match, unverified",961.135,-3818.865,minilm
+CC2_f794aae3e4ce_S,WAIT,rules_only,,,,,
+CC2_f794aae3e4ce_S,WAIT,minilm_only,,,,,
+CC2_f794aae3e4ce_S,WAIT,cascade,,,,,
+CC2_faba9dcd262b_I,INTERVENE,rules_only,6350.0,"exact ASR word match, unverified",,,
+CC2_faba9dcd262b_I,INTERVENE,minilm_only,6350.0,"exact ASR word match, unverified",2842.179,-3507.821,minilm
+CC2_faba9dcd262b_I,INTERVENE,cascade,6350.0,"exact ASR word match, unverified",2843.519,-3506.481,minilm
+CC2_faba9dcd262b_S,WAIT,rules_only,,,,,
+CC2_faba9dcd262b_S,WAIT,minilm_only,,,,,
+CC2_faba9dcd262b_S,WAIT,cascade,,,,,
+HVB_0ece8b36d4c148b0_I,INTERVENE,rules_only,4370.0,"exact ASR word match, unverified",1955.666,-2414.334,fast-path
+HVB_0ece8b36d4c148b0_I,INTERVENE,minilm_only,4370.0,"exact ASR word match, unverified",962.723,-3407.277,minilm
+HVB_0ece8b36d4c148b0_I,INTERVENE,cascade,4370.0,"exact ASR word match, unverified",961.504,-3408.496,minilm
+HVB_0ece8b36d4c148b0_S,WAIT,rules_only,,,,,
+HVB_0ece8b36d4c148b0_S,WAIT,minilm_only,,,,,
+HVB_0ece8b36d4c148b0_S,WAIT,cascade,,,,,
+HVB_1318c617f2ed4b1d_I,INTERVENE,rules_only,3840.0,"exact ASR word match, unverified",2941.423,-898.577,fast-path
+HVB_1318c617f2ed4b1d_I,INTERVENE,minilm_only,3840.0,"exact ASR word match, unverified",1944.672,-1895.328,minilm
+HVB_1318c617f2ed4b1d_I,INTERVENE,cascade,3840.0,"exact ASR word match, unverified",1946.216,-1893.784,minilm
+HVB_1318c617f2ed4b1d_S,WAIT,rules_only,,,,,
+HVB_1318c617f2ed4b1d_S,WAIT,minilm_only,,,,,
+HVB_1318c617f2ed4b1d_S,WAIT,cascade,,,,,
+HVB_334a6116f8da4981_I,INTERVENE,rules_only,1600.0,"exact ASR word match, unverified",,,
+HVB_334a6116f8da4981_I,INTERVENE,minilm_only,1600.0,"exact ASR word match, unverified",1063.44,-536.56,minilm
+HVB_334a6116f8da4981_I,INTERVENE,cascade,1600.0,"exact ASR word match, unverified",1059.26,-540.74,minilm
+HVB_334a6116f8da4981_S,WAIT,rules_only,,,,,
+HVB_334a6116f8da4981_S,WAIT,minilm_only,,,,,
+HVB_334a6116f8da4981_S,WAIT,cascade,,,,,
+HVB_3b3fd6ea9ed3475f_I,INTERVENE,rules_only,5210.0,"exact ASR word match, unverified",3024.239,-2185.761,fast-path
+HVB_3b3fd6ea9ed3475f_I,INTERVENE,minilm_only,5210.0,"exact ASR word match, unverified",4058.709,-1151.291,minilm
+HVB_3b3fd6ea9ed3475f_I,INTERVENE,cascade,5210.0,"exact ASR word match, unverified",3024.249,-2185.751,fast-path
+HVB_3b3fd6ea9ed3475f_S,WAIT,rules_only,,,,,
+HVB_3b3fd6ea9ed3475f_S,WAIT,minilm_only,,,,,
+HVB_3b3fd6ea9ed3475f_S,WAIT,cascade,,,,,
+HVB_522507a4750d4f5c_I,INTERVENE,rules_only,2800.0,"exact ASR word match, unverified",,,
+HVB_522507a4750d4f5c_I,INTERVENE,minilm_only,2800.0,"exact ASR word match, unverified",944.724,-1855.276,minilm
+HVB_522507a4750d4f5c_I,INTERVENE,cascade,2800.0,"exact ASR word match, unverified",943.657,-1856.343,minilm
+HVB_522507a4750d4f5c_S,WAIT,rules_only,,,,,
+HVB_522507a4750d4f5c_S,WAIT,minilm_only,,,,,
+HVB_522507a4750d4f5c_S,WAIT,cascade,,,,,
+HVB_72da2d85ddbd4a4d_I,INTERVENE,rules_only,3620.0,"exact ASR word match, unverified",2955.227,-664.773,fast-path
+HVB_72da2d85ddbd4a4d_I,INTERVENE,minilm_only,3620.0,"exact ASR word match, unverified",955.451,-2664.549,minilm
+HVB_72da2d85ddbd4a4d_I,INTERVENE,cascade,3620.0,"exact ASR word match, unverified",953.41,-2666.59,minilm
+HVB_72da2d85ddbd4a4d_S,WAIT,rules_only,,,,,
+HVB_72da2d85ddbd4a4d_S,WAIT,minilm_only,,,,,
+HVB_72da2d85ddbd4a4d_S,WAIT,cascade,,,,,
+HVB_e24c1b79e49b45d7_I,INTERVENE,rules_only,4760.0,"post-hoc ASR positional candidate, unverified",3014.231,-1745.769,fast-path
+HVB_e24c1b79e49b45d7_I,INTERVENE,minilm_only,4760.0,"post-hoc ASR positional candidate, unverified",994.967,-3765.033,minilm
+HVB_e24c1b79e49b45d7_I,INTERVENE,cascade,4760.0,"post-hoc ASR positional candidate, unverified",994.164,-3765.836,minilm
+HVB_e24c1b79e49b45d7_S,WAIT,rules_only,,,,,
+HVB_e24c1b79e49b45d7_S,WAIT,minilm_only,,,,,
+HVB_e24c1b79e49b45d7_S,WAIT,cascade,,,,,
+HVB_ecbc3d17d459474c_I,INTERVENE,rules_only,3950.0,"exact ASR word match, unverified",2419.022,-1530.978,fast-path
+HVB_ecbc3d17d459474c_I,INTERVENE,minilm_only,3950.0,"exact ASR word match, unverified",1013.994,-2936.006,minilm
+HVB_ecbc3d17d459474c_I,INTERVENE,cascade,3950.0,"exact ASR word match, unverified",1016.706,-2933.294,minilm
+HVB_ecbc3d17d459474c_S,WAIT,rules_only,,,,,
+HVB_ecbc3d17d459474c_S,WAIT,minilm_only,,,,,
+HVB_ecbc3d17d459474c_S,WAIT,cascade,,,,,
+NCSU_1bba30ea685b_I,INTERVENE,rules_only,4720.0,"exact ASR word match, unverified",,,
+NCSU_1bba30ea685b_I,INTERVENE,minilm_only,4720.0,"exact ASR word match, unverified",2795.214,-1924.786,minilm
+NCSU_1bba30ea685b_I,INTERVENE,cascade,4720.0,"exact ASR word match, unverified",2795.973,-1924.027,minilm
+NCSU_1bba30ea685b_S,WAIT,rules_only,,,,,
+NCSU_1bba30ea685b_S,WAIT,minilm_only,,,,,
+NCSU_1bba30ea685b_S,WAIT,cascade,,,,,
+NCSU_40c99d3a91ba_I,INTERVENE,rules_only,5360.0,"exact ASR word match, unverified",,,
+NCSU_40c99d3a91ba_I,INTERVENE,minilm_only,5360.0,"exact ASR word match, unverified",1951.82,-3408.18,minilm
+NCSU_40c99d3a91ba_I,INTERVENE,cascade,5360.0,"exact ASR word match, unverified",1952.005,-3407.995,minilm
+NCSU_40c99d3a91ba_S,WAIT,rules_only,,,,,
+NCSU_40c99d3a91ba_S,WAIT,minilm_only,,,,,
+NCSU_40c99d3a91ba_S,WAIT,cascade,,,,,
+NCSU_53d43acd05ce_I,INTERVENE,rules_only,3040.0,"exact ASR word match, unverified",,,
+NCSU_53d43acd05ce_I,INTERVENE,minilm_only,3040.0,"exact ASR word match, unverified",1064.889,-1975.111,minilm
+NCSU_53d43acd05ce_I,INTERVENE,cascade,3040.0,"exact ASR word match, unverified",1064.984,-1975.016,minilm
+NCSU_53d43acd05ce_S,WAIT,rules_only,,,,,
+NCSU_53d43acd05ce_S,WAIT,minilm_only,,,,,
+NCSU_53d43acd05ce_S,WAIT,cascade,,,,,
+NCSU_57e56d52b01b_I,INTERVENE,rules_only,5940.0,"exact ASR word match, unverified",,,
+NCSU_57e56d52b01b_I,INTERVENE,minilm_only,5940.0,"exact ASR word match, unverified",930.596,-5009.404,minilm
+NCSU_57e56d52b01b_I,INTERVENE,cascade,5940.0,"exact ASR word match, unverified",931.707,-5008.293,minilm
+NCSU_57e56d52b01b_S,WAIT,rules_only,,,,,
+NCSU_57e56d52b01b_S,WAIT,minilm_only,,,,,
+NCSU_57e56d52b01b_S,WAIT,cascade,,,,,
+NCSU_5e36a0c64782_I,INTERVENE,rules_only,1920.0,"exact ASR word match, unverified",2054.323,134.323,fast-path
+NCSU_5e36a0c64782_I,INTERVENE,minilm_only,1920.0,"exact ASR word match, unverified",1111.334,-808.666,minilm
+NCSU_5e36a0c64782_I,INTERVENE,cascade,1920.0,"exact ASR word match, unverified",1111.693,-808.307,minilm
+NCSU_5e36a0c64782_S,WAIT,rules_only,,,,,
+NCSU_5e36a0c64782_S,WAIT,minilm_only,,,,,
+NCSU_5e36a0c64782_S,WAIT,cascade,,,,,
+NCSU_746b19d8ed43_I,INTERVENE,rules_only,2160.0,"exact ASR word match, unverified",1044.043,-1115.957,fast-path
+NCSU_746b19d8ed43_I,INTERVENE,minilm_only,2160.0,"exact ASR word match, unverified",1051.432,-1108.568,minilm
+NCSU_746b19d8ed43_I,INTERVENE,cascade,2160.0,"exact ASR word match, unverified",1044.038,-1115.962,fast-path
+NCSU_746b19d8ed43_S,WAIT,rules_only,,,,,
+NCSU_746b19d8ed43_S,WAIT,minilm_only,,,,,
+NCSU_746b19d8ed43_S,WAIT,cascade,,,,,
+NCSU_917509413373_I,INTERVENE,rules_only,2720.0,"exact ASR word match, unverified",933.631,-1786.369,fast-path
+NCSU_917509413373_I,INTERVENE,minilm_only,2720.0,"exact ASR word match, unverified",940.545,-1779.455,minilm
+NCSU_917509413373_I,INTERVENE,cascade,2720.0,"exact ASR word match, unverified",933.634,-1786.366,fast-path
+NCSU_917509413373_S,WAIT,rules_only,,,,,
+NCSU_917509413373_S,WAIT,minilm_only,,,,,
+NCSU_917509413373_S,WAIT,cascade,,,,,
+NCSU_aad888113544_I,INTERVENE,rules_only,3280.0,"exact ASR word match, unverified",997.644,-2282.356,fast-path
+NCSU_aad888113544_I,INTERVENE,minilm_only,3280.0,"exact ASR word match, unverified",1005.502,-2274.498,minilm
+NCSU_aad888113544_I,INTERVENE,cascade,3280.0,"exact ASR word match, unverified",997.638,-2282.362,fast-path
+NCSU_aad888113544_S,WAIT,rules_only,,,,,
+NCSU_aad888113544_S,WAIT,minilm_only,,,,,
+NCSU_aad888113544_S,WAIT,cascade,,,,,
+NCSU_ada44730f974_I,INTERVENE,rules_only,2400.0,"exact ASR word match, unverified",1050.549,-1349.451,fast-path
+NCSU_ada44730f974_I,INTERVENE,minilm_only,2400.0,"exact ASR word match, unverified",1058.514,-1341.486,minilm
+NCSU_ada44730f974_I,INTERVENE,cascade,2400.0,"exact ASR word match, unverified",1050.551,-1349.449,fast-path
+NCSU_ada44730f974_S,WAIT,rules_only,,,,,
+NCSU_ada44730f974_S,WAIT,minilm_only,,,,,
+NCSU_ada44730f974_S,WAIT,cascade,,,,,
+NCSU_b8bd052a0b60_I,INTERVENE,rules_only,4980.0,"post-hoc ASR positional candidate, unverified",,,
+NCSU_b8bd052a0b60_I,INTERVENE,minilm_only,4980.0,"post-hoc ASR positional candidate, unverified",2575.299,-2404.701,minilm
+NCSU_b8bd052a0b60_I,INTERVENE,cascade,4980.0,"post-hoc ASR positional candidate, unverified",2575.212,-2404.788,minilm
+NCSU_b8bd052a0b60_S,WAIT,rules_only,,,,,
+NCSU_b8bd052a0b60_S,WAIT,minilm_only,,,,,
+NCSU_b8bd052a0b60_S,WAIT,cascade,,,,,
+NCSU_c84496b8e225_I,INTERVENE,rules_only,3920.0,"exact ASR word match, unverified",1926.328,-1993.672,fast-path
+NCSU_c84496b8e225_I,INTERVENE,minilm_only,3920.0,"exact ASR word match, unverified",938.55,-2981.45,minilm
+NCSU_c84496b8e225_I,INTERVENE,cascade,3920.0,"exact ASR word match, unverified",938.584,-2981.416,minilm
+NCSU_c84496b8e225_S,WAIT,rules_only,,,,,
+NCSU_c84496b8e225_S,WAIT,minilm_only,,,,,
+NCSU_c84496b8e225_S,WAIT,cascade,,,,,
+NCSU_d81ea2caee24_I,INTERVENE,rules_only,5640.0,"exact ASR word match, unverified",,,
+NCSU_d81ea2caee24_I,INTERVENE,minilm_only,5640.0,"exact ASR word match, unverified",3051.538,-2588.462,minilm
+NCSU_d81ea2caee24_I,INTERVENE,cascade,5640.0,"exact ASR word match, unverified",3051.465,-2588.535,minilm
+NCSU_d81ea2caee24_S,WAIT,rules_only,,,,,
+NCSU_d81ea2caee24_S,WAIT,minilm_only,,,,,
+NCSU_d81ea2caee24_S,WAIT,cascade,,,,,
+NCSU_dd0a87fc1765_I,INTERVENE,rules_only,5650.0,"post-hoc ASR positional candidate, unverified",,,
+NCSU_dd0a87fc1765_I,INTERVENE,minilm_only,5650.0,"post-hoc ASR positional candidate, unverified",2062.579,-3587.421,minilm
+NCSU_dd0a87fc1765_I,INTERVENE,cascade,5650.0,"post-hoc ASR positional candidate, unverified",2063.222,-3586.778,minilm
+NCSU_dd0a87fc1765_S,WAIT,rules_only,,,,,
+NCSU_dd0a87fc1765_S,WAIT,minilm_only,,,,,
+NCSU_dd0a87fc1765_S,WAIT,cascade,,,,,
+NCSU_ddb4bc68d1ab_I,INTERVENE,rules_only,4170.0,"exact ASR word match, unverified",,,
+NCSU_ddb4bc68d1ab_I,INTERVENE,minilm_only,4170.0,"exact ASR word match, unverified",1176.918,-2993.082,minilm
+NCSU_ddb4bc68d1ab_I,INTERVENE,cascade,4170.0,"exact ASR word match, unverified",1177.289,-2992.711,minilm
+NCSU_ddb4bc68d1ab_S,WAIT,rules_only,,,,,
+NCSU_ddb4bc68d1ab_S,WAIT,minilm_only,,,,,
+NCSU_ddb4bc68d1ab_S,WAIT,cascade,,,,,
+NCSU_f357bbdef993_I,INTERVENE,rules_only,640.0,"exact ASR word match, unverified",,,
+NCSU_f357bbdef993_I,INTERVENE,minilm_only,640.0,"exact ASR word match, unverified",955.729,315.729,minilm
+NCSU_f357bbdef993_I,INTERVENE,cascade,640.0,"exact ASR word match, unverified",954.439,314.439,minilm
+NCSU_f357bbdef993_S,WAIT,rules_only,,,,,
+NCSU_f357bbdef993_S,WAIT,minilm_only,,,,,
+NCSU_f357bbdef993_S,WAIT,cascade,,,,,
+YTSC2_39fa9ec190ee_I,INTERVENE,rules_only,2000.0,"exact ASR word match, unverified",,,
+YTSC2_39fa9ec190ee_I,INTERVENE,minilm_only,2000.0,"exact ASR word match, unverified",931.469,-1068.531,minilm
+YTSC2_39fa9ec190ee_I,INTERVENE,cascade,2000.0,"exact ASR word match, unverified",931.304,-1068.696,minilm
+YTSC2_39fa9ec190ee_S,WAIT,rules_only,,,6016.839,,fast-path
+YTSC2_39fa9ec190ee_S,WAIT,minilm_only,,,,,
+YTSC2_39fa9ec190ee_S,WAIT,cascade,,,6016.853,,fast-path
+YTSC2_3d3286f7cd19_I,INTERVENE,rules_only,3590.0,"exact ASR word match, unverified",,,
+YTSC2_3d3286f7cd19_I,INTERVENE,minilm_only,3590.0,"exact ASR word match, unverified",1404.712,-2185.288,minilm
+YTSC2_3d3286f7cd19_I,INTERVENE,cascade,3590.0,"exact ASR word match, unverified",1404.382,-2185.618,minilm
+YTSC2_3d3286f7cd19_S,WAIT,rules_only,,,,,
+YTSC2_3d3286f7cd19_S,WAIT,minilm_only,,,,,
+YTSC2_3d3286f7cd19_S,WAIT,cascade,,,,,
+YTSC2_8241649609f8_I,INTERVENE,rules_only,640.0,"post-hoc ASR positional candidate, unverified",,,
+YTSC2_8241649609f8_I,INTERVENE,minilm_only,640.0,"post-hoc ASR positional candidate, unverified",963.137,323.137,minilm
+YTSC2_8241649609f8_I,INTERVENE,cascade,640.0,"post-hoc ASR positional candidate, unverified",2011.164,1371.164,minilm
+YTSC2_8241649609f8_S,WAIT,rules_only,,,,,
+YTSC2_8241649609f8_S,WAIT,minilm_only,,,,,
+YTSC2_8241649609f8_S,WAIT,cascade,,,,,
+YTSC2_cd70bea023f7_I,INTERVENE,rules_only,4490.0,"exact ASR word match, unverified",,,
+YTSC2_cd70bea023f7_I,INTERVENE,minilm_only,4490.0,"exact ASR word match, unverified",958.052,-3531.948,minilm
+YTSC2_cd70bea023f7_I,INTERVENE,cascade,4490.0,"exact ASR word match, unverified",958.155,-3531.845,minilm
+YTSC2_cd70bea023f7_S,WAIT,rules_only,,,,,
+YTSC2_cd70bea023f7_S,WAIT,minilm_only,,,,,
+YTSC2_cd70bea023f7_S,WAIT,cascade,,,,,
+YTSC2_d029fa3a95e1_I,INTERVENE,rules_only,4240.0,"exact ASR word match, unverified",3071.925,-1168.075,fast-path
+YTSC2_d029fa3a95e1_I,INTERVENE,minilm_only,4240.0,"exact ASR word match, unverified",2209.469,-2030.531,minilm
+YTSC2_d029fa3a95e1_I,INTERVENE,cascade,4240.0,"exact ASR word match, unverified",2209.525,-2030.475,minilm
+YTSC2_d029fa3a95e1_S,WAIT,rules_only,,,,,
+YTSC2_d029fa3a95e1_S,WAIT,minilm_only,,,,,
+YTSC2_d029fa3a95e1_S,WAIT,cascade,,,,,
+YTSC2_da4ea2a5506f_I,INTERVENE,rules_only,4080.0,"exact ASR word match, unverified",2034.332,-2045.668,fast-path
+YTSC2_da4ea2a5506f_I,INTERVENE,minilm_only,4080.0,"exact ASR word match, unverified",2040.033,-2039.967,minilm
+YTSC2_da4ea2a5506f_I,INTERVENE,cascade,4080.0,"exact ASR word match, unverified",2034.347,-2045.653,fast-path
+YTSC2_da4ea2a5506f_S,WAIT,rules_only,,,,,
+YTSC2_da4ea2a5506f_S,WAIT,minilm_only,,,,,
+YTSC2_da4ea2a5506f_S,WAIT,cascade,,,,,
+YTSC2_eeca91fd439b_I,INTERVENE,rules_only,4640.0,"post-hoc ASR positional candidate, unverified",2159.325,-2480.675,fast-path
+YTSC2_eeca91fd439b_I,INTERVENE,minilm_only,4640.0,"post-hoc ASR positional candidate, unverified",1037.151,-3602.849,minilm
+YTSC2_eeca91fd439b_I,INTERVENE,cascade,4640.0,"post-hoc ASR positional candidate, unverified",1035.378,-3604.622,minilm
+YTSC2_eeca91fd439b_S,WAIT,rules_only,,,,,
+YTSC2_eeca91fd439b_S,WAIT,minilm_only,,,,,
+YTSC2_eeca91fd439b_S,WAIT,cascade,,,,,

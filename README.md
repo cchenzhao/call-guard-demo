@@ -2,6 +2,12 @@
 
 A research demo featuring Scam Ninja and Whiskey the Cat. Use invented credentials only.
 
+**Live demo:** https://call-guard-demo.vercel.app/
+
+**Research evaluation:** [Reproduce the rules / MiniLM / combined comparison](research/README.md). The repository contains the fixed dataset, checkpoint, cached ASR observations and evaluation code; no API key is needed for that comparison.
+
+**Midway report:** [Call Guard report (PDF)](research/Call_Guard_Midway_Report.pdf).
+
 ## Architecture
 
 - Browser microphone → same-origin Vercel WebSocket proxy → Deepgram Nova-3 streaming ASR. The permanent key stays on the server.
@@ -32,7 +38,7 @@ uvicorn api.index:app --port 8000
 
 Use `vercel dev` for the combined static site and API routing.
 
-`model/validation.json` records parity checks against the original PyTorch harness on the saved synthetic voice transcripts. Source model/data are deliberately not copied into this repository; conversion scripts expect the original course-project layout.
+`model/validation.json` records parity checks against the original PyTorch harness on saved synthetic voice transcripts. The original checkpoint and research inputs are in `research/`; deployment conversion scripts expect the original course-project layout.
 
 ## Endpoints
 
@@ -42,4 +48,4 @@ Use `vercel dev` for the combined static site and API routing.
 - `POST /api/agent-reply`: streams caller text and speech as NDJSON.
 - `POST /api/tts`: streams speech as NDJSON.
 
-Provider credentials and keys, original audio recordings, synthetic datasets, course files and personal notes are excluded from this repository.
+Provider credentials and keys, original audio recordings, unrelated course files and personal notes are excluded from this repository. The research directory contains synthetic data and text transcripts, not real credentials.

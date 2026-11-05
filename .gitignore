@@ -9,3 +9,4 @@ node_modules/
 .DS_Store
 .vercel
 .env*
+research/Proposal/security_harness/classifier/runs/candidate_003/model/model.safetensors
