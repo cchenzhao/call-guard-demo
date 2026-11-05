@@ -1,8 +1,8 @@
-# Call Guard: Voice Security Harness
+# Context-Aware Voice Security Agent for Real-Time Credential Disclosure Detection
 
 Can a voice agent recognize when someone is about to disclose a password or passcode and warn them in time? Call Guard explores this question with a context-aware security harness for English voice conversations. It compares detection coverage, false warnings, and decision timing across rules, a fine-tuned MiniLM classifier, and their combination.
 
-**[Live demo](https://call-guard-demo.vercel.app/)** · **[Demo video](https://youtu.be/NzATwahUXQ0)** · **[Midway report](research/Call_Guard_Midway_Report.pdf)** · **[Full reproduction instructions](research/README.md)**
+**[Live demo](https://call-guard-demo.vercel.app/)** · **[Demo video](https://youtu.be/NzATwahUXQ0)** · **[Midway report](research/Context_Aware_Voice_Security_Agent_Midterm_Report.pdf)** · **[Full reproduction instructions](research/README.md)**
 
 The demo is an illustrative push-to-talk conversation between the fictional caller Scam Ninja and the user, Whiskey the Cat. Use invented credentials only.
 
@@ -22,7 +22,7 @@ The dataset contains **1,000 synthetic English records in 500 safe/risky familie
 
 The fixed, family-separated split contains **700 training, 150 validation, and 150 test records**. MiniLM was fine-tuned on text consisting of history and one selected user prefix per training record; it does not process audio directly.
 
-For the voice evaluation, Deepgram Aura-2 generated audio for both sides of the 150 test scenarios. Nova-3 transcribed the focal user turn. All three detection schemes were evaluated on the same cached ASR partials and arrival times, with local computation measured during replay. See the [midway report](research/Call_Guard_Midway_Report.pdf) for the full setup and source references.
+For the voice evaluation, Deepgram Aura-2 generated audio for both sides of the 150 test scenarios. Nova-3 transcribed the focal user turn. All three detection schemes were evaluated on the same cached ASR partials and arrival times, with local computation measured during replay. See the [midway report](research/Context_Aware_Voice_Security_Agent_Midterm_Report.pdf) for the full setup and source references.
 
 ## Results and key takeaways
 
